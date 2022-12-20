@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define PONTOS_INICIAIS 100
+#define PONTOS_INICIAIS 100.0
 #define PALPITE_INICIAL 0
-#define MAIOR_NUMERO 100.0
+#define MAIOR_NUMERO 100
 #define MENOR_NUMERO 1
 #define TENTATIVAS_FACIL 20
 #define TENTATIVAS_MEDIO 10
