@@ -33,15 +33,23 @@ int main() {
     short dificuldade;
     short tentativas;
 
-    printf("Você tem que acertar o número entre 1 e 100 que eu pensei.\n\n", numeroSecreto);
+    printf("Você tem que acertar o número entre 1 e 100 que eu pensei.\n\n");
 
-    printf("Escolha a dificuldade:\n");
-    printf("(1) Facil\n");
-    printf("(2) Medio\n");
-    printf("(3) Dificil\n");
-    printf("> ");
-    scanf("%hd", &dificuldade);
-    printf("\n");
+    while(1) {
+        printf("Escolha a dificuldade:\n");
+        printf("(1) Facil\n");
+        printf("(2) Medio\n");
+        printf("(3) Dificil\n");
+        printf("> ");
+        scanf("%hd", &dificuldade);
+        printf("\n");
+
+        if (dificuldade < 1 || dificuldade > 3) {
+            printf("Essa não é uma opção valida. Escolha novamente.\n\n");
+        } else {
+            break;
+        }
+    }
 
     switch (dificuldade) {
     case 1:
